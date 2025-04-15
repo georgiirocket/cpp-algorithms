@@ -8,22 +8,7 @@ bool isOpen(char& ch) {
 
 bool isPair(char& top, char& ch) 
 {
-    if(top == '(' && ch == ')') 
-    {
-        return true;
-    }
-
-    if(top == '[' && ch == ']') 
-    {
-        return true;
-    }
-
-    if(top == '{' && ch == '}') 
-    {
-        return true;
-    }
-
-    return false;
+    return top == '(' && ch == ')' || top == '[' && ch == ']' || top == '{' && ch == '}';
 }
 
 bool isBalanced(string& str) 
